@@ -22,3 +22,22 @@ def get_pets_sold (pet_shop):
 def increase_pets_sold(pet_shop, new_sold_pets):
     pet_shop['admin']['pets_sold'] += new_sold_pets
     return pet_shop['admin']['pets_sold']
+
+
+def get_stock_count(pet_shop):
+    return len(pet_shop['pets'])
+
+
+def get_pets_by_breed (pet_shop,breed):
+    same_breed_pets = []
+    for pet in pet_shop['pets']:
+        if breed == pet['breed']:
+            same_breed_pets.append(pet)
+    return same_breed_pets
+
+
+
+    
+
+    
+  
