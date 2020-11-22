@@ -87,10 +87,11 @@ def sell_pet_to_customer (pet_shop, pet, customer):
         remove_customer_cash (customer, pet['price'])
         add_or_remove_cash (pet_shop, pet['price'])
 
-    elif pet == None:
+    else:
         return get_customer_pet_count(customer), get_pets_sold(pet_shop), get_customer_cash(customer), get_total_cash (pet_shop)
         
-    
+
+
 
 
 
