@@ -216,7 +216,6 @@ class TestPetShop(unittest.TestCase):
     def test_sell_pet_to_customer__insufficient_funds(self):
         customer = self.customers[1]
         pet = find_pet_by_name(self.cc_pet_shop,"Arthur")
-
         sell_pet_to_customer(self.cc_pet_shop, pet, customer)
 
         self.assertEqual(0, get_customer_pet_count(customer))
